@@ -1,0 +1,24 @@
+<snippet>
+	<content>
+<![CDATA[
+var $1 = \$.ajax({
+	url: '$2',
+	dataType: 'jsonp',
+	jsonpCallback: '$3',
+	type: 'post',
+	data: {$4}
+});
+// SUCCESS:
+$1.done(function(data){
+	// do stuff when AJAX is complete
+});
+$1.fail(function(data){
+	console.error('$1 call failed.', data);
+});$0
+]]>
+</content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+<tabTrigger>AJAX</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
